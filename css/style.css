@@ -1,0 +1,132 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     
+}
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html{
+     font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background: #f1f5f8;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     height: 50px;
+     background-color: white;
+     padding: 0.5rem;
+}
+
+h1, li{
+     padding: 1rem;
+     font-size: 2rem;
+     font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+}
+h1{
+     color: blue;
+}
+ul li a{
+     text-decoration: none;
+     color: black;
+}
+li {
+     list-style: none;
+}
+
+.nav-center, .nav-links{
+     display: flex;
+     justify-content: space-around;
+}
+
+
+
+main {
+     height: 90vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     
+}
+h2, span{
+     color: white;
+     background: black;
+     font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+     font-size: 4rem;
+     padding: 0.8rem;
+     text-align: center;
+     border: 1px solid black;
+     border-radius: 5px;
+     font-weight: bold;
+}
+span{
+     color: blue;
+}
+
+button{
+    width: 28%;
+    margin-top: 3rem;
+    padding: 0.7rem 0;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 7px;
+
+
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
